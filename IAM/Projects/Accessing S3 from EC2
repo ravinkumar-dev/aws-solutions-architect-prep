@@ -1,0 +1,24 @@
+
+1. Objective
+
+=> This project demonstrates how to securely access Amazon S3 from EC2 instances using IAM roles.
+
+2. Architecture Diagram
+
+=> A typical architecture includes:
+Refer EC2-s3-access diagram.
+
+3. Steps Performed
+
+- Launch an EC2 instance.
+- Create an IAM role with S3 access policy (e.g., AmazonS3ReadOnlyAccess).
+- Attach the IAM role to the EC2 instance.
+- Install AWS CLI on the EC2 instance (if not already installed).
+- Use AWS CLI or SDK to list, upload, or download files from S3.
+
+4. Security Learnings
+
+- Always use IAM roles for granting permissions to EC2, never hardcode credentials.
+- Follow the principle of least privilege when assigning permissions.
+- Use VPC endpoints for private S3 access if needed.
+- Monitor and audit access using AWS CloudTrail.
