@@ -1,26 +1,4 @@
----
 
-### Creating IAM Groups with Boto3 (Python)
-
-You can also automate the creation of IAM groups using Boto3, the AWS SDK for Python. Here’s a simple script:
-
-```python
-import boto3
-
-iam = boto3.client('iam')
-
-groups = ['Admin', 'Developer', 'ReadOnly']
-for group in groups:
-  response = iam.create_group(GroupName=group)
-  print(f"Created group: {group}")
-```
-
-**How to Document:**
-1. Run the script above in your Python environment.
-2. Take a screenshot of the IAM groups in the AWS Console after creation.
-3. Save the screenshot in the `screenshots/` folder of your project.
-4. Reference the screenshot in your GitHub documentation for visual proof.
-# AWS IAM Project Documentation
 ---
 
 ## Project Title
@@ -69,9 +47,6 @@ List the main steps you took, in order.
 
 ---
 
-### Security Learnings
-Summarize what you learned about security and best practices.
-
 *Example:*
 - Avoid hardcoded credentials
 - Prefer IAM roles over access keys
@@ -79,8 +54,7 @@ Summarize what you learned about security and best practices.
 
 ---
 
-### Example Policies/Code
-Show sample JSON policies, CLI commands, or Lemon language snippets.
+sample JSON policies, CLI commands, or Lemon language snippets.
 
 *Example:*
 ```json
@@ -101,12 +75,6 @@ Show sample JSON policies, CLI commands, or Lemon language snippets.
 ### Screenshots
 Add screenshots of the AWS Console, CLI output, or policy simulator results.
 
----
-
-### Bonus/Advanced
-Mention any extra features, such as custom policies or troubleshooting steps.
-
----
 
 ## Best Projects for Immediate Impact
 
@@ -120,15 +88,9 @@ Mention any extra features, such as custom policies or troubleshooting steps.
 
 ---
 
-## How to Make Projects Look Professional
+iam-best-practices.md
+------------------------------
 
-For EACH project include:
-1. Objective
-2. Architecture Diagram
-3. Steps Performed
-4. Security Learnings
-
-Extra Powerful Addition: Create `iam-best-practices.md` with:
 - Least privilege
 - MFA
 - Role-based access
