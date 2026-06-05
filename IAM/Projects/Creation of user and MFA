@@ -1,0 +1,19 @@
+
+1. Objective
+
+=> To create a new IAM user in AWS and enhance account security by enabling Multi-Factor Authentication (MFA) for the user.
+
+2. Steps Performed
+
+- Created a new IAM user with programmatic and/or console access.
+- Assigned the user to appropriate IAM groups or attached necessary policies.
+- Logged in as the new user to verify access.
+- Enabled MFA for the user by registering a virtual or hardware MFA device.
+- Tested login with MFA to ensure it is required and functioning.
+
+3. Security Learnings
+
+- Enabling MFA significantly increases account security by requiring a second authentication factor.
+- Always assign the least privilege permissions to new users.
+- Regularly review and rotate credentials for IAM users.
+- Educate users about the importance of MFA and secure credential management.

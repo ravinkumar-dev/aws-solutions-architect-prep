@@ -1,0 +1,18 @@
+
+1. Objective
+
+=> To restrict access to an S3 bucket so that only authorized users or roles can access specific resources, ensuring data security and compliance.
+
+2. Steps Performed
+
+- Created an S3 bucket for storing sensitive data.
+- Defined and attached a custom bucket policy to allow access only from specific IAM users, roles, or IP addresses.
+- Tested access with authorized and unauthorized users to verify restrictions.
+- Enabled logging and monitoring for the S3 bucket to track access attempts.
+
+3. Security Learnings
+
+- Restricting S3 access using bucket policies and IAM ensures only intended users can access data.
+- Regularly review and update policies to maintain least privilege.
+- Enable logging (e.g., S3 access logs, CloudTrail) to monitor and audit access.
+- Avoid using public access unless absolutely necessary.
